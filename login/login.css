@@ -1,0 +1,150 @@
+@charset "utf-8";
+*{
+   margin: 0;
+   padding: 0;
+   font-family: sans-serif; 
+}
+#hero{
+    width: 100%;
+    height: 100vh;
+    background-image:  url(../image/bg2.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#navber1{
+    position: fixed;
+    z-index: 1;
+    width:100%;
+}
+
+.navbar {
+     background-color: rgba(61, 61, 61, 0.596);
+     
+     }
+.navbar .navbar-nav .nav-link {
+     color: #fff; 
+     
+    }
+.navbar .navbar-nav .nav-link:hover { 
+    color: #fbc531; 
+}
+.navbar .navbar-nav .active > .nav-link {
+     color: #fbc531; 
+    }
+
+footer a.text-light:hover {
+     color: #fed136!important; text-decoration: none;
+     }
+footer .cizgi {
+     border-right: 1px solid #535e67; 
+    }
+@media (max-width: 992px) { 
+    footer .cizgi { border-right: none; } 
+}
+
+
+.container2{
+    width: 50%;
+    height: 92.5vh;
+    background: rgba(86,86,86,0.3);
+    backdrop-filter:blur(10px);
+    position: relative;
+    left: 0;
+    top: 57px;
+    
+}
+
+#body_right{
+    width: 90%;
+    position: absolute;
+    left: 15%;
+    top:2%;
+    
+}
+
+
+
+
+/*start of from validation*/
+#body_right input[type="text"],#body_right input[type="password"]{
+    border-radius: 20px;
+    margin-top: 50px;
+    padding: 20px;
+    font-size: 15px;
+    width: 70%;
+    height: 40px; 
+    text-align: center;
+    transition: 0.25s;
+    background:none ;
+   color: white;
+   border:2px solid #2980b9;
+  
+}
+#body_right input[type="text"]:focus,#body_right input[type="password"]:focus{
+    outline: none;
+    box-shadow: 0 2px 4px 0 black;
+    border-color: #2ecc71;
+}
+::placeholder{
+    color: white;
+}
+#dob{
+    width: 99.667%;
+    height: 40px;
+    margin-top: 30px;
+   
+}
+#day,#month,#year{
+    width: 16.666%;
+    height: 30px;
+    border-radius: 20px;
+    background:none;
+    border-color:#2980b9;
+}
+#day:focus,#month:focus,#year:focus{
+    outline: none;
+    
+}
+#day:hover,#month:hover,#year:hover{
+    cursor: pointer;
+}
+option{
+    background-color: white;
+}
+
+label{
+color: white;
+cursor: pointer;
+}
+
+#gender_div{
+    margin-left: 25%;
+}
+p{
+color:black;
+}
+#submit{
+    width: 16.611%;
+    height: 25px;
+    text-align: center; 
+    border-radius: 20px;
+    background:none ;
+    color: white;
+    border:2px solid #2ecc71;
+    cursor: pointer;
+    outline-style: none; 
+    margin-left: 55%;
+}
+#submit:hover{
+    background-color: #2ecc71;
+}
+#warning,#warning1,#warning2,#warning3{
+    width: 18px;
+    height: 18px;
+    margin-left: -25px;
+    margin-bottom: -6;
+    display: none;
+    
+}
+/*end of from validation*/
