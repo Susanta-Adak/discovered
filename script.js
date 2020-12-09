@@ -10,3 +10,6 @@ var backgroundImg=new Array(
     "image/bg4.png",
     "image/bg5.png"
 );
+/*start of audio*/
+
+/*end of audio*/
