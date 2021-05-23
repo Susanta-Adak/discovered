@@ -3,10 +3,24 @@ var next=document.getElementById("next");
 var thumbnail=document.getElementsByClassName("thumbnail");
 var hero=document.getElementById("hero");
 
-var backgroundImg=new Array(
+
+var imgArray = [
     "image/bg1.png",
     "image/bg2.png",
     "image/bg3.png",
     "image/bg4.png",
-    "image/bg5.png"
-);
+    "image/bg5.png"],
+    curIndex = 0;
+    imgDuration = 5000;
+
+function slideShow() {
+    document.getElementById('slider').className += "fadeOut";
+    setTimeout(function() {
+        document.getElementById('slider').src = imgArray[curIndex];
+        document.getElementById('slider').className = "";
+    },300);
+    curIndex++;
+    if (curIndex == imgArray.length) { curIndex = 0; }
+    setTimeout(slideShow, imgDuration);
+}
+slideShow();

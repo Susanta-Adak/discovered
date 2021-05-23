@@ -7,10 +7,11 @@
 #hero{
     width: 100%;
     height: 100vh;
-    background-image:  url(image/bg1.png);
+    /*background-image:  url(image/bg1.png);*/
     background-size: cover;
     background-position: center;
     position: relative;
+    margin:opx;
 }
 #navber1{
     position: fixed;
@@ -27,12 +28,22 @@
     background-position: center;
     float: left;
 }
+#slider {
+	width:100%;
+	height:100vh;
+    opacity:1;
+    transition: opacity 1s; 
+}
+
+#slider.fadeOut {
+    opacity:0;
+}
 
 
 
 .navbar {
      background-color: rgba(61, 61, 61, 0.596);
-     
+     min-width: 373px;
      }
 .navbar .navbar-nav .nav-link {
      color: #fff; 
@@ -54,17 +65,18 @@ footer .cizgi {
 @media (max-width: 992px) { 
     footer .cizgi { border-right: none; } 
 }
-
+footer{
+    margin-top: -48px;
+}
 
 .container2{
     width: 50%;
-    height: 92.5vh;
+    height: 92.35vh;
     background: rgba(86,86,86,0.3);
-    backdrop-filter:blur(10px);
-    position: relative;
+    backdrop-filter:blur(5px);
+    position: absolute;
     left: 0;
     top: 57px;
-
 }
 
 .info{
@@ -98,3 +110,18 @@ footer .cizgi {
 ::placeholder{
     color: #ccc;
 }
+/*start for mobile*/
+@media (max-width:430px){
+    .container2{
+        width: 100%;
+        height: 92.5vh;
+        background: none;
+        backdrop-filter:blur(1px);
+        position: relative;
+        left: 0;
+        top: 57px;
+    
+    } 
+}
+
+/* end for mobile code*/

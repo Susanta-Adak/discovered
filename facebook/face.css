@@ -45,6 +45,8 @@ footer .cizgi {
 @media (max-width: 992px) { 
     footer .cizgi { border-right: none; } 
 }
-
+footer{
+    margin-top: -48px;
+}
 
 
